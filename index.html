@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .placeDiv {
+          width: 45%;
+          height: 25%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background: rgba(187, 182, 182, 0.5);
+          margin: 1% 0;
+          padding: 0;
+          box-sizing: border-box;
+      }                       
+  </style>
+    <script src="https://kit.fontawesome.com/ef7563f344.js" crossorigin="anonymous" defer></script>
+  </head>
+
+  <body>
+    <div class="modal">
+      <img src="./img/Spinner-1.4s-577px.gif" alt=""/>
+    </div>
+
+    <header class="header">
+      <h2 class="title">CURRENT WEATHER</h2>
+      <div class="searchDiv">
+        <input type="text" class="searchInput" />
+        <span class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="nav">
+        <li class="navItem today">Today</li>
+        <li class="navItem day5">5-day forecast</li>
+      </ul>
+    </nav>
+
+    <div class="errorDiv">
+      <img src="img/404.jpg" />
+    </div>
+
+    <div class="todayDiv">
+      <main class="main">
+        <div class="mainTitle">
+          <p class="city"></p>
+          <p class="date"></p>
+        </div>
+        <h3 class="weatherStatus"></h3>
+        <div class="weatherMain">
+          <div class="weatherIcon">
+            <img class="mainIcon" />
+          </div>
+          <div class="temperature"></div>
+          <div class="shortDetails">
+            <table class="shortTable"></table>
+          </div>
+        </div>
+      </main>
+
+      <section class="detail"></section>
+      
+      <section class="nearby"></section>
+
+    </div>
+
+    <div class="daysDiv">
+      <div class="smallDays"></div>
+      <div class="bigDays"></div>
+    </div>
+
+    <script src="./script/main.js" type="module"></script>
+    <script src="./script/convertors.js" type="module"></script>
+    <script src="./script/htmlElements.js" type="module"></script>
+    
+  </body>
+</html>

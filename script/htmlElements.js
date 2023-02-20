@@ -1,0 +1,21 @@
+const searchInput = document.querySelector(".searchInput");
+const searchBtn = document.querySelector(".searchIcon");
+const mainContainer = document.querySelector("main");
+const detailContainer = document.querySelector("section");
+const city = document.querySelector(".city");
+const curDate = document.querySelector(".date");
+const weatherStatus = document.querySelector(".weatherStatus");
+const mainWeatherIcon = document.querySelector(".mainIcon");
+const mainTemp = document.querySelector(".temperature");
+const shortTable = document.querySelector(".shortTable");
+const modal = document.querySelector(".modal");
+const todayNav = document.querySelector(".today");
+const day5Nav = document.querySelector(".day5");
+const errorDiv = document.querySelector(".errorDiv");
+const todayDiv = document.querySelector(".todayDiv");
+const nearbyDiv = document.querySelector(".nearby");
+const daysDiv = document.querySelector(".daysDiv");
+const smallDaysDiv = document.querySelector(".smallDays");
+const bigDaysDiv = document.querySelector(".bigDays");
+
+export {searchInput, searchBtn, mainContainer, detailContainer, city, curDate, weatherStatus, mainWeatherIcon, mainTemp, shortTable, modal, todayNav, day5Nav, errorDiv, todayDiv, nearbyDiv, daysDiv, smallDaysDiv, bigDaysDiv};
