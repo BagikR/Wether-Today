@@ -264,10 +264,7 @@ td{
     height: 25vh;
 };
 
-.placeDiv h3{
-    width: 35%;
-    cursor: pointer;
-}
+
 
 .placeDiv p{
     width: 35%;
@@ -278,6 +275,7 @@ td{
     height: 99%;
     width: 10%;
 }
+
 .smallDays{
     display: flex;
     justify-content: space-between;

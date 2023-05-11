@@ -8,30 +8,40 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <style>
       .placeDiv {
-          width: 45%;
-          height: 25%;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          background: rgba(187, 182, 182, 0.5);
-          margin: 1% 0;
-          padding: 0;
-          box-sizing: border-box;
-      }                       
-  </style>
-    <script src="https://kit.fontawesome.com/ef7563f344.js" crossorigin="anonymous" defer></script>
+        width: 45%;
+        height: 25%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgba(187, 182, 182, 0.5);
+        margin: 1% 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .placeDiv h3 {
+        width: 35%;
+        cursor: pointer;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ef7563f344.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
 
   <body>
     <div class="modal">
-      <img src="./img/Spinner-1.4s-577px.gif" alt=""/>
+      <img src="./img/Spinner-1.4s-577px.gif" alt="" />
     </div>
 
     <header class="header">
       <h2 class="title">CURRENT WEATHER</h2>
       <div class="searchDiv">
         <input type="text" class="searchInput" />
-        <span class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span class="searchIcon"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></span>
       </div>
     </header>
 
@@ -65,9 +75,8 @@
       </main>
 
       <section class="detail"></section>
-      
-      <section class="nearby"></section>
 
+      <section class="nearby"></section>
     </div>
 
     <div class="daysDiv">
@@ -76,8 +85,5 @@
     </div>
 
     <script src="./script/main.js" type="module"></script>
-    <script src="./script/convertors.js" type="module"></script>
-    <script src="./script/htmlElements.js" type="module"></script>
-    
   </body>
 </html>
